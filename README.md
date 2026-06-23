@@ -1,3 +1,6 @@
+Made edits to the way loss rate is calculated for cosine schedulers.
+Uses uv as package manager.
+
 # OneTrainer
 
 OneTrainer is a one-stop solution for all your Diffusion training needs.
