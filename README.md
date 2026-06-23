@@ -1,3 +1,5 @@
+# My Edits
+
 Made edits to the way loss rate is calculated for cosine schedulers.
 Uses uv as package manager.
 
