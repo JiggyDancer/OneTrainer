@@ -253,7 +253,7 @@ echo %CYAN%Upgrading pip and installing dependencies from requirements.txt...%RE
 echo Executing: uv pip install --upgrade pip
 uv pip install --upgrade pip || call :die "pip upgrade failed"
 echo Executing: uv pip install -r requirements.txt
-uv pip install -r requirements.txt --index-strategy unsafe-best-match || call :die "Dependencies install failed"
+uv pip install -r requirements.txt || call :die "Dependencies install failed"
 
 rem 6) Check CUDA
 echo.
