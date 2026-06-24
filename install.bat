@@ -265,7 +265,7 @@ if errorlevel 1 (
   set /p "ans_amd=AMD GPU? (y/n): "
   if /i "!ans_amd!"=="y" (
     echo Executing: python "%SCRIPT_DIR%\scripts\install_zluda.py"
-    uv run "%SCRIPT_DIR%\scripts\install_zluda.py" || call :die "ZLUDA install failed"
+    python "%SCRIPT_DIR%\scripts\install_zluda.py" || call :die "ZLUDA install failed"
   ) else (
     call :die "CUDA unavailable and not an AMD GPU setup - aborting. Please check PyTorch and NVIDIA driver compatibility."
   )
